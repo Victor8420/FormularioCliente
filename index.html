@@ -10,180 +10,202 @@
 </head>
 
 <body>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Rut</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Mail</th>
-                <th scope="col">Celular</th>
-                <th scope="col">Direccion</th>
-                <th scope="col">Estado Civil</th>
-                <th scope="col">Fecha Nacimiento</th>
-                <th scope="col">Contraseña</th>
-            </tr>
-        </thead>
-        <tbody id="listaClientes">
 
-        </tbody>
-    </table>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Registrar Cliente
-  </button>
+    <br> <br>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ingrese Datos Nuevo Cliente</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+    </div>
+
+
+    <div class="container">
+
+
+
+
+        <div class="table-responsive-md">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Registrar Cliente
+          </button>
+            <br>
+            <picture>
+                <source media="(min-width: )" srcset="">
+                <img src="" alt="">
+            </picture>
+        </div>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr class="alert-info">
+                    <th scope="col">Rut</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Mail</th>
+                    <th scope="col">Celular</th>
+                    <th scope="col">Direccion</th>
+                    <th scope="col">Estado Civil</th>
+                    <th scope="col">Fecha Nacimiento</th>
+                    <th scope="col">Contraseña</th>
+                </tr>
+            </thead>
+            <tbody id="listaClientes">
+
+            </tbody>
+        </table>
+        <br>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ingrese Datos Nuevo Cliente</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
               </button>
-                </div>
-                <div class="modal-body">
+                    </div>
+                    <div class="modal-body">
 
-                    <form>
+                        <form>
 
-                        <div class="form-group">
-                        </div> <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+                            <div class="form-group">
+                            </div> <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
 
 
-                        <div class="form-group">
-                            <label for="txtnombre">Nombre</label>
-                            <input type="text" class="form-control" id="Nombre" placeholder="Ingrese Nombre" maxlength="20">
-                        </div>
-                        <div class="form-group">
-                            <label for="txtCelular">Celular</label>
-                            <input type="number" class="form-control" id="Celular" placeholder="Ingrese Numero Celular" maxlength="9">
-                        </div>
+                            <div class="form-group">
+                                <label for="txtnombre">Nombre</label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="Ingrese Nombre" maxlength="20">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCelular">Celular</label>
+                                <input type="number" class="form-control" id="Celular" placeholder="Ingrese Numero Celular" maxlength="9">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="txtDireccion">Direccion</label>
-                            <input type="text" class="form-control" id="Direccion" placeholder="Ingrese Direccion" maxlength="20">
-                        </div>
+                            <div class="form-group">
+                                <label for="txtDireccion">Direccion</label>
+                                <input type="text" class="form-control" id="Direccion" placeholder="Ingrese Direccion" maxlength="20">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Estado Civil</label>
-                            <select class="form-control" id="EstadoCivil">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Estado Civil</label>
+                                <select class="form-control" id="EstadoCivil">
                                     <option value="Soltero/a">Soltero</option>
                                     <option value="Casado/a">Casado</option>
                                     <option value="Divorciado/a">Divorciado</option>
                                     <option value="Viudo/a">Viudo</option>
                                 </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="txtFNacimiento">Fecha Nacimiento</label>
-                            <input type="date" class="form-control" id="FNacimiento" placeholder="Ingrese Fecha Nacimiento" maxlength="8">
-                        </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtFNacimiento">Fecha Nacimiento</label>
+                                <input type="date" class="form-control" id="FNacimiento" placeholder="Ingrese Fecha Nacimiento" maxlength="8">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Correo</label>
-                            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Ingrese Correo">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Correo</label>
+                                <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Ingrese Correo">
 
-                        </div>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Clave</label>
-                            <input type="password" class="form-control" id="clave" placeholder="Ingrese clave 4 digitos" maxlength="4">
-                        </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Clave</label>
+                                <input type="password" class="form-control" id="clave" placeholder="Ingrese clave 4 digitos" maxlength="4">
+                            </div>
 
-                        <button type="submit">Validar RUT y Enviar Form</button>
-                        <script src="validarRUT.js"></script>
-                    </form>
+                            <button type="submit">Validar RUT y Enviar Form</button>
+                            <script src="validarRUT.js"></script>
+                        </form>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <script src="js/jquery.min.js "></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
+        <script src="js/jquery.min.js "></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
 
-            getCliente();
+                getCliente();
 
-        });
+            });
 
-        function guardarcliente() {
+            function guardarcliente() {
 
-            var rut = $("rut").val();
-            var nombre = $("nombre").val();
-            var mail = $("mail").val();
-            var direccion = $("direccion").val();
-            var celular = $("celular").val();
-            var estado = $("estado").val();
-            var fecha_nac = $("fecha_nac").val();
-            var clave = $("clave").val();
+                var rut = $("rut").val();
+                var nombre = $("nombre").val();
+                var mail = $("mail").val();
+                var direccion = $("direccion").val();
+                var celular = $("celular").val();
+                var estado = $("estado").val();
+                var fecha_nac = $("fecha_nac").val();
+                var clave = $("clave").val();
 
-            $.ajax({
-                url: 'http://localhost:64618/api/cliente',
-                type: 'POST',
-                data: {
-                    "rut": rut,
-                    "nombre": nombre,
-                    "mail": mail,
-                    "direccion": direccion,
-                    "celular": celular,
-                    "estado": estado,
-                    "fecha_nac": fecha_nac,
-                    "clave": clave,
-                },
+                $.ajax({
+                    url: 'http://localhost:64618/api/cliente',
+                    type: 'POST',
+                    data: {
+                        "rut": rut,
+                        "nombre": nombre,
+                        "mail": mail,
+                        "direccion": direccion,
+                        "celular": celular,
+                        "estado": estado,
+                        "fecha_nac": fecha_nac,
+                        "clave": clave,
+                    },
 
-                success: function(response) {
-                    if (response == 1) {
-                        alert("cliente se a registrado")
-                    } else {
-                        alert("No se realizo El Registro")
-                    }
-                },
-                error: function(xhr, status) {
-                    console.log('error de conexion');
-                }
-
-            })
-        }
-
-        function getCliente() {
-
-            $.ajax({
-                url: 'http://localhost:64618/api/clientes',
-                type: 'GET',
-                dataType: 'json',
-                success: function(result, status, xhr) {
-                    let html = '';
-                    for (let item of result.data) {
-                        //console.log(item);
-                        html += '<tr>';
-                        html += '<td>' + item.rut + '</td>';
-                        html += '<td>' + item.nombre + '</td>';
-                        html += '<td>' + item.mail + '</td>';
-                        html += '<td>' + item.celular + '</td>';
-                        html += '<td>' + item.direccion + '</td>';
-                        html += '<td>' + item.estado + '</td>';
-                        html += '<td>' + item.fecha_nac + '</td>';
-                        html += '<td>' + item.clave + '</td>';
-                        html += '</tr>';
-
+                    success: function(response) {
+                        if (response == 1) {
+                            alert("cliente se a registrado")
+                        } else {
+                            alert("No se realizo El Registro")
+                        }
+                    },
+                    error: function(xhr, status) {
+                        console.log('error de conexion');
                     }
 
-                    $('#listaClientes').html(html);
-                },
-                error: function(xhr, status) {
-                    console.log('fallo la solicitud');
-                }
-            })
+                })
+            }
 
-        }
-    </script>
+            function getCliente() {
+
+                $.ajax({
+                    url: 'http://localhost:64618/api/clientes',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(result, status, xhr) {
+                        let html = '';
+                        for (let item of result.data) {
+                            //console.log(item);
+                            html += '<tr>';
+                            html += '<td>' + item.rut + '</td>';
+                            html += '<td>' + item.nombre + '</td>';
+                            html += '<td>' + item.mail + '</td>';
+                            html += '<td>' + item.celular + '</td>';
+                            html += '<td>' + item.direccion + '</td>';
+                            html += '<td>' + item.estado + '</td>';
+                            html += '<td>' + item.fecha_nac + '</td>';
+                            html += '<td>' + item.clave + '</td>';
+                            html += '</tr>';
+
+                        }
+
+                        $('#listaClientes').html(html);
+                    },
+                    error: function(xhr, status) {
+                        console.log('fallo la solicitud');
+                    }
+                })
+
+            }
+        </script>
 </body>
 
 </html>
